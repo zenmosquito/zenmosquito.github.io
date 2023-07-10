@@ -1,0 +1,130 @@
+/*General*/
+:root {
+  --offwhite: #eee8dc;
+  --brown: #5f2718;
+  --orange: #b66d23;
+  --green: #7e9745;
+  --gray: rgba(248, 248, 248, 1);
+  --shadowblack: rgba(0, 0, 0, 0.13);
+}
+
+.bio-head {
+  margin-bottom: 0;
+  background-color: var(--offwhite) !important;
+  color: var(--brown) !important;
+}
+
+.body-bio {
+  background-color: var(--offwhite) !important;
+}
+
+.cv-link-two {
+  color: var(--brown) !important;
+  font-size: smaller;
+}
+
+.bio-info {
+  padding-top: 10px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  padding-bottom: 10px !important;
+  margin: 60px auto;
+  background-color: var(--white) !important;
+  border-radius: 10px;
+  box-shadow: var(--shadowblack) 0 3px 11px 0 !important;
+  width: 60%;
+}
+
+.p-info {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 18px;
+  text-align: left !important;
+}
+
+/* Photo Gallery */
+
+.wrap {
+  overflow: hidden;
+  margin: 10px;
+}
+
+.box {
+  float: left;
+  position: relative;
+  width: 20%;
+  padding-bottom: 20%;
+}
+
+.boxInner {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.boxInner img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  /* Smartphone view: 1 tile */
+  .box {
+    width: 30%;
+    padding-bottom: 30%;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  /* Tablet view: 2 tiles */
+  .box {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  /* Small desktop / ipad view: 3 tiles */
+  .box {
+    width: 33.3%;
+    padding-bottom: 33.3%;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+  /* Medium desktop: 4 tiles */
+  .box {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+}
+
+/* APP */
+
+@media (max-width: 767px) {
+  .name-bio,
+  .sub-bio,
+  .bio-contacts {
+    display: none;
+  }
+
+  .bio-header {
+    padding: 0;
+    height: 35vh;
+  }
+
+  .bio-items {
+    height: 40vh;
+  }
+
+  .cv-link {
+    font-size: 20px;
+  }
+
+  .bio-info {
+    width: 70%;
+    margin: 30px auto;
+  }
+}
