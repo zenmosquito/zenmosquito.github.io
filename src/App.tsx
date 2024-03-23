@@ -95,6 +95,7 @@ export default function App() {
           autoPlay
           loop
           muted
+          playsInline
           style={{
             marginTop: 60,
             marginBottom: 0,
