@@ -33,6 +33,7 @@ export default function Contact() {
           marginLeft: "auto",
           marginRight: "auto",
           marginTop: 40,
+          boxShadow: "#7a7979 0 2px 10px 0",
         }}
       />
       <Typography

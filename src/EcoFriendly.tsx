@@ -36,7 +36,7 @@ export default function EcoFriendly() {
         </Typography>
         <Typography
           color={theme.palette.bodytext.main}
-          sx={{ my: 3, fontSize: 20, pb: 10 }}
+          sx={{ my: 3, fontSize: 20, pb: 3 }}
         >
           Buscamos uma produção de baixo impacto ambiental, vegana e artesanal.
           <Typography
@@ -62,13 +62,10 @@ export default function EcoFriendly() {
         <Box
           alignItems={"center"}
           sx={{
-            position: "absolute",
             display: "flex",
             justifyContent: "center",
-            top: "106%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            width: "100vw",
+            pb: 5,
+            mb: 5,
           }}
         >
           <img src="./mosquito.png" height={imgsize} width={imgsize} />
@@ -89,7 +86,7 @@ export default function EcoFriendly() {
               "&:hover": { color: theme.palette.highlight.main },
             }}
           >
-            Saiba mais e fale com a Zen!
+            Fale com a Zen!
           </Button>
           <img src="./mosquito.png" height={imgsize} width={imgsize} />
         </Box>
