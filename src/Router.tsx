@@ -22,7 +22,7 @@ export interface RouteDefinition {
   element: JSX.Element;
 }
 
-export const BASE_URL = "/acting-portfolio-boilerplate/";
+export const BASE_URL = "/";
 
 export const routes: RouteDefinition[] = [
   {
