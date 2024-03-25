@@ -5,14 +5,18 @@ import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import theme from "./theme";
 
-const velas = [
+const velaszm = [
   {
     img: "./velazen.png",
     author: "ZenMosquito",
   },
   {
-    img: "./raw.png",
-    author: "Raw",
+    img: "./butia.png",
+    author: "Butiá",
+  },
+  {
+    img: "./abaca.png",
+    author: "Abacá",
   },
   {
     img: "./santarem.png",
@@ -23,28 +27,33 @@ const velas = [
     author: "Bangladesh",
   },
   {
-    img: "./abaca.png",
-    author: "Abacá",
+    img: "./eco.png",
+    author: "Eco-Esfera",
+  },
+  {
+    img: "./raw.png",
+    author: "Raw",
   },
   {
     img: "./ramie.png",
     author: "Ramie",
   },
   {
-    img: "./eco.png",
-    author: "Eco-Esfera",
+    img: "./upshot.png",
+    author: "",
   },
+];
+
+// Linha ZenDecor
+
+const velaszd = [
   {
-    img: "./butia.png",
-    author: "Butiá",
+    img: "./bowl.png",
+    author: "Bowl Cerâmica",
   },
   {
     img: "./totem.png",
-    author: "ZenDecor Totem",
-  },
-  {
-    img: "./bowl.png",
-    author: "ZenDecor Bowl",
+    author: "Totem",
   },
 ];
 
@@ -63,8 +72,44 @@ export default function Projects() {
       >
         Produtos
       </Typography>
+      {/* Linha ZenMosquito */}
+      <Typography
+        color={theme.palette.bodytext.main}
+        variant="body1"
+        sx={{ mt: 3, pt: 2, fontWeight: "bold" }}
+      >
+        Linha ZenMosquito
+      </Typography>
+      <Typography color={theme.palette.bodytext.main} variant="caption">
+        Velas com nossos blends de óleos essenciais.
+      </Typography>
       <ImageList sx={{ mx: "auto" }} variant="masonry" cols={3} gap={8}>
-        {velas.map((item) => (
+        {velaszm.map((item) => (
+          <ImageListItem key={item.img}>
+            <img
+              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+              alt="velas-img"
+              loading="lazy"
+              style={{ borderRadius: "0.5rem" }}
+            />
+            <ImageListItemBar subtitle={item.author} position="below" />
+          </ImageListItem>
+        ))}
+      </ImageList>
+      {/* Zen Decor */}
+      <Typography
+        color={theme.palette.bodytext.main}
+        variant="body1"
+        sx={{ mt: 3, pt: 2, fontWeight: "bold" }}
+      >
+        Linha ZenDecor
+      </Typography>
+      <Typography color={theme.palette.bodytext.main} variant="caption">
+        Velas prefeitas para decoração. Sem óleos essenciais.
+      </Typography>
+      <ImageList sx={{ mx: "auto" }} variant="masonry" cols={3} gap={8}>
+        {velaszd.map((item) => (
           <ImageListItem key={item.img}>
             <img
               srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
